@@ -10,7 +10,8 @@ namespace CauTrucLenhcoBan
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("le dinh chinh");
+            Console.WriteLine("Hello world");
+            Console.ReadKey();
         }
     }
 }
