@@ -10,6 +10,7 @@ namespace Chinh
     {
         public static void Main(string[] args)
         {
+            int a;
         }
     }
 }
