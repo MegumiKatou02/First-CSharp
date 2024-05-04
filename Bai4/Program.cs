@@ -37,16 +37,38 @@ namespace Chinh
                 get { return age; }
                 set { age = value; }
             }
+            public virtual void health()
+            {
+                name = "con chau chau";
+            }
+        }
+
+        public class Hello : SinhVien
+        {
+            public override void health()
+            {
+                Name = "con kiki";
+                // base.health();
+            }
+        }
+
+        abstract class Animal
+        {
+            public abstract void Show();
+        }
+
+        class Cat : Animal
+        {
+            public override void Show()
+            {
+                Console.WriteLine("lo con chim");
+            }
         }
 
         public static void Main(string[] args)
         {
-           SinhVien chinh1 = new SinhVien();
-           SinhVien chinh2 = new SinhVien();
-           SinhVien chinh3 = new SinhVien();
-           SinhVien chinh4 = new SinhVien();
-           int count = SinhVien.Count();
-           Console.WriteLine($"count: {count}");
+           Animal chinh = new Cat();
+           chinh.Show();
         }
     }
 }
