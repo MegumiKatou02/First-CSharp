@@ -8,49 +8,45 @@ namespace Chinh
 {
     public class Program
     {
-        public struct SinhVien 
+        public class SinhVien 
         {
-            public int id
+            private int id;
+            private string? name;
+            private int age;
+            private static int count = 0;
+            public static int Count() 
+            {
+                return count;
+            }
+            public SinhVien()
+            {
+                count++;
+            }
+            public int Id 
             {
                 get { return id; }
                 set { id = value; }
             }
-            public string? name
+            public string? Name
             {
                 get { return name; }
                 set { name = value; }
             }
-            public int age
+            public int Age
             {
                 get { return age; }
                 set { age = value; }
             }
         }
-    
-        public static void NhapSinhVien(out SinhVien sinhVien)
-        {   
-            Console.WriteLine("Nhập ID của sinh viên:");
-            sinhVien.id = Convert.ToInt32(Console.ReadLine());
-
-            Console.WriteLine("Nhập tên của sinh viên:");
-            sinhVien.name = Console.ReadLine();
-
-            Console.WriteLine("Nhập tuổi của sinh viên:");
-            sinhVien.age = Convert.ToInt32(Console.ReadLine());
-        }
 
         public static void Main(string[] args)
         {
-            SinhVien sv = new SinhVien();
-
-            NhapSinhVien(out sv);
-
-            Console.WriteLine("Thông tin sinh viên vừa nhập:");
-            Console.WriteLine($"ID: {sv.id}");
-            Console.WriteLine($"Tên: {sv.name}");
-            Console.WriteLine($"Tuổi: {sv.age}");
-
-            Console.ReadKey(); 
+           SinhVien chinh1 = new SinhVien();
+           SinhVien chinh2 = new SinhVien();
+           SinhVien chinh3 = new SinhVien();
+           SinhVien chinh4 = new SinhVien();
+           int count = SinhVien.Count();
+           Console.WriteLine($"count: {count}");
         }
     }
 }
