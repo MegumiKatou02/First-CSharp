@@ -28,7 +28,6 @@ namespace Chinh
         private static void Hs_NameChange(string name)
         {
             Console.WriteLine("Tên mới  : " + name);
-
         }
 
         class SinhVien
