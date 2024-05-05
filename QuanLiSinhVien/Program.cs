@@ -17,7 +17,7 @@ namespace MainNameSpace
                 Menu();
                 Console.Write("Nhập lựa chọn: ");
                 int choose;
-                bool checkValid = int.TryParse(Console.ReadLine(), out int passChoose);
+                bool checkValid = int.TryParse(Console.ReadLine(), out int passChoose); 
                 if(!checkValid)
                 {
                     Console.Clear();
