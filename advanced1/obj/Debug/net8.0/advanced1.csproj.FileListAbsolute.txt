@@ -1,0 +1,15 @@
+C:\Users\ADMIN\Documents\GitHub\First-CSharp\advanced1\bin\Debug\net8.0\advanced1.exe
+C:\Users\ADMIN\Documents\GitHub\First-CSharp\advanced1\bin\Debug\net8.0\advanced1.deps.json
+C:\Users\ADMIN\Documents\GitHub\First-CSharp\advanced1\bin\Debug\net8.0\advanced1.runtimeconfig.json
+C:\Users\ADMIN\Documents\GitHub\First-CSharp\advanced1\bin\Debug\net8.0\advanced1.dll
+C:\Users\ADMIN\Documents\GitHub\First-CSharp\advanced1\bin\Debug\net8.0\advanced1.pdb
+C:\Users\ADMIN\Documents\GitHub\First-CSharp\advanced1\obj\Debug\net8.0\advanced1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ADMIN\Documents\GitHub\First-CSharp\advanced1\obj\Debug\net8.0\advanced1.AssemblyInfoInputs.cache
+C:\Users\ADMIN\Documents\GitHub\First-CSharp\advanced1\obj\Debug\net8.0\advanced1.AssemblyInfo.cs
+C:\Users\ADMIN\Documents\GitHub\First-CSharp\advanced1\obj\Debug\net8.0\advanced1.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Documents\GitHub\First-CSharp\advanced1\obj\Debug\net8.0\advanced1.sourcelink.json
+C:\Users\ADMIN\Documents\GitHub\First-CSharp\advanced1\obj\Debug\net8.0\advanced1.dll
+C:\Users\ADMIN\Documents\GitHub\First-CSharp\advanced1\obj\Debug\net8.0\refint\advanced1.dll
+C:\Users\ADMIN\Documents\GitHub\First-CSharp\advanced1\obj\Debug\net8.0\advanced1.pdb
+C:\Users\ADMIN\Documents\GitHub\First-CSharp\advanced1\obj\Debug\net8.0\advanced1.genruntimeconfig.cache
+C:\Users\ADMIN\Documents\GitHub\First-CSharp\advanced1\obj\Debug\net8.0\ref\advanced1.dll

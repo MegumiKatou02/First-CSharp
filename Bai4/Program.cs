@@ -52,14 +52,14 @@ namespace Chinh
             }
         }
 
-        abstract class Animal
+        interface Animal
         {
-            public abstract void Show();
+            void Show();
         }
 
         class Cat : Animal
         {
-            public override void Show()
+            public void Show()
             {
                 Console.WriteLine("lo con chim");
             }
