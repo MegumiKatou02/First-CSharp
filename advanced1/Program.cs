@@ -10,24 +10,46 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 namespace Chinh
 {
     public class Program{
+
+        delegate void UpdateName(string name);
         public static void Main(string[] args)
         {
-            List<int> list = new List<int>();
-            list.Add(1);
-            list.Add(2);
-            list.Add(3);
-            list.Add(4);
-            list.Add(5);
-            list.Add(6);
-            foreach(int x in list)
-            {
-                Print(x);
+            Console.OutputEncoding = Encoding.UTF8;
 
-            }
+            SinhVien sinhVien = new SinhVien();
+            sinhVien.NameChanged += Hs_NameChange;
+
+            sinhVien.Name = "Le Dinh Chinh";
+            Console.WriteLine("Tên từ class: " + sinhVien.Name);
+            sinhVien.Name = "what the f*ck";
+            Console.WriteLine("Tên từ class: " + sinhVien.Name);
         }
-        public static void Print(int x)
+
+        private static void Hs_NameChange(string name)
         {
-            Console.WriteLine(x);
+            Console.WriteLine("Tên mới  : " + name);
+
+        }
+
+        class SinhVien
+        {
+            public event UpdateName? NameChanged;
+            private string name;
+            public string Name{
+                get => name;
+                set
+                {
+                    name = value;
+                    if(NameChanged != null)
+                    {
+                        NameChanged(name);
+                    }
+                }
+            }
+            public SinhVien() 
+            {
+                name = "";
+            }
         }
     }
    
