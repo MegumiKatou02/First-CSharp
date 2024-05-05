@@ -1,0 +1,15 @@
+C:\Users\ADMIN\Documents\GitHub\First-CSharp\QuanLiSinhVien\bin\Debug\net8.0\QuanLiSinhVien.exe
+C:\Users\ADMIN\Documents\GitHub\First-CSharp\QuanLiSinhVien\bin\Debug\net8.0\QuanLiSinhVien.deps.json
+C:\Users\ADMIN\Documents\GitHub\First-CSharp\QuanLiSinhVien\bin\Debug\net8.0\QuanLiSinhVien.runtimeconfig.json
+C:\Users\ADMIN\Documents\GitHub\First-CSharp\QuanLiSinhVien\bin\Debug\net8.0\QuanLiSinhVien.dll
+C:\Users\ADMIN\Documents\GitHub\First-CSharp\QuanLiSinhVien\bin\Debug\net8.0\QuanLiSinhVien.pdb
+C:\Users\ADMIN\Documents\GitHub\First-CSharp\QuanLiSinhVien\obj\Debug\net8.0\QuanLiSinhVien.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ADMIN\Documents\GitHub\First-CSharp\QuanLiSinhVien\obj\Debug\net8.0\QuanLiSinhVien.AssemblyInfoInputs.cache
+C:\Users\ADMIN\Documents\GitHub\First-CSharp\QuanLiSinhVien\obj\Debug\net8.0\QuanLiSinhVien.AssemblyInfo.cs
+C:\Users\ADMIN\Documents\GitHub\First-CSharp\QuanLiSinhVien\obj\Debug\net8.0\QuanLiSinhVien.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Documents\GitHub\First-CSharp\QuanLiSinhVien\obj\Debug\net8.0\QuanLiSinhVien.sourcelink.json
+C:\Users\ADMIN\Documents\GitHub\First-CSharp\QuanLiSinhVien\obj\Debug\net8.0\QuanLiSinhVien.dll
+C:\Users\ADMIN\Documents\GitHub\First-CSharp\QuanLiSinhVien\obj\Debug\net8.0\refint\QuanLiSinhVien.dll
+C:\Users\ADMIN\Documents\GitHub\First-CSharp\QuanLiSinhVien\obj\Debug\net8.0\QuanLiSinhVien.pdb
+C:\Users\ADMIN\Documents\GitHub\First-CSharp\QuanLiSinhVien\obj\Debug\net8.0\QuanLiSinhVien.genruntimeconfig.cache
+C:\Users\ADMIN\Documents\GitHub\First-CSharp\QuanLiSinhVien\obj\Debug\net8.0\ref\QuanLiSinhVien.dll
