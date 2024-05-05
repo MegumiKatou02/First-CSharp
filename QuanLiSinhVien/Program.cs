@@ -55,6 +55,8 @@ namespace MainNameSpace
                     Console.Clear();
                 }
             }
+            Console.Clear();
+            Console.WriteLine("Cảm ơn đã sử dụng chương trình \n\t -Thanks-");
         }
         public static void Menu()
         {
