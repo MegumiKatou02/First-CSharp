@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "advanced1", "advanced1\adva
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdvanceEvent", "AdvanceEvent\AdvanceEvent.csproj", "{064B9341-7796-4B8E-9F76-FB2859BA6459}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuanLiSinhVien", "QuanLiSinhVien\QuanLiSinhVien.csproj", "{A86E406D-3618-4674-A95B-7FBC97D8052F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,5 +44,9 @@ Global
 		{064B9341-7796-4B8E-9F76-FB2859BA6459}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{064B9341-7796-4B8E-9F76-FB2859BA6459}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{064B9341-7796-4B8E-9F76-FB2859BA6459}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A86E406D-3618-4674-A95B-7FBC97D8052F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A86E406D-3618-4674-A95B-7FBC97D8052F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A86E406D-3618-4674-A95B-7FBC97D8052F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A86E406D-3618-4674-A95B-7FBC97D8052F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
