@@ -18,9 +18,11 @@ namespace Chinh
             list.Add(3);
             list.Add(4);
             list.Add(5);
+            list.Add(6);
             foreach(int x in list)
             {
                 Print(x);
+
             }
         }
         public static void Print(int x)
