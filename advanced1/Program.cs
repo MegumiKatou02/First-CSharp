@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Collections;
+using System.Collections.Generic;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Chinh
@@ -11,12 +12,20 @@ namespace Chinh
     public class Program{
         public static void Main(string[] args)
         {
-            Hashtable hash = new Hashtable();
-            hash.Add("le dinh", 5);
-            foreach(DictionaryEntry entry in hash)
+            List<int> list = new List<int>();
+            list.Add(1);
+            list.Add(2);
+            list.Add(3);
+            list.Add(4);
+            foreach(int x in list)
             {
-                Console.WriteLine(entry.Key + "=" + entry.Value);
+                Print(x);
             }
         }
+        public static void Print(int x)
+        {
+            Console.WriteLine(x);
+        }
     }
+   
 }
