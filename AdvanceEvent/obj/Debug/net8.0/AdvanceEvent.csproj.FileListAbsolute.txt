@@ -1,0 +1,15 @@
+C:\Users\ADMIN\Documents\GitHub\First-CSharp\AdvanceEvent\bin\Debug\net8.0\AdvanceEvent.exe
+C:\Users\ADMIN\Documents\GitHub\First-CSharp\AdvanceEvent\bin\Debug\net8.0\AdvanceEvent.deps.json
+C:\Users\ADMIN\Documents\GitHub\First-CSharp\AdvanceEvent\bin\Debug\net8.0\AdvanceEvent.runtimeconfig.json
+C:\Users\ADMIN\Documents\GitHub\First-CSharp\AdvanceEvent\bin\Debug\net8.0\AdvanceEvent.dll
+C:\Users\ADMIN\Documents\GitHub\First-CSharp\AdvanceEvent\bin\Debug\net8.0\AdvanceEvent.pdb
+C:\Users\ADMIN\Documents\GitHub\First-CSharp\AdvanceEvent\obj\Debug\net8.0\AdvanceEvent.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ADMIN\Documents\GitHub\First-CSharp\AdvanceEvent\obj\Debug\net8.0\AdvanceEvent.AssemblyInfoInputs.cache
+C:\Users\ADMIN\Documents\GitHub\First-CSharp\AdvanceEvent\obj\Debug\net8.0\AdvanceEvent.AssemblyInfo.cs
+C:\Users\ADMIN\Documents\GitHub\First-CSharp\AdvanceEvent\obj\Debug\net8.0\AdvanceEvent.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Documents\GitHub\First-CSharp\AdvanceEvent\obj\Debug\net8.0\AdvanceEvent.sourcelink.json
+C:\Users\ADMIN\Documents\GitHub\First-CSharp\AdvanceEvent\obj\Debug\net8.0\AdvanceEvent.dll
+C:\Users\ADMIN\Documents\GitHub\First-CSharp\AdvanceEvent\obj\Debug\net8.0\refint\AdvanceEvent.dll
+C:\Users\ADMIN\Documents\GitHub\First-CSharp\AdvanceEvent\obj\Debug\net8.0\AdvanceEvent.pdb
+C:\Users\ADMIN\Documents\GitHub\First-CSharp\AdvanceEvent\obj\Debug\net8.0\AdvanceEvent.genruntimeconfig.cache
+C:\Users\ADMIN\Documents\GitHub\First-CSharp\AdvanceEvent\obj\Debug\net8.0\ref\AdvanceEvent.dll
