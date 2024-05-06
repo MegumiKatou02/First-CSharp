@@ -10,6 +10,8 @@ namespace QuanLiThuVienNS
             admin = false;
             users = new List<User>();
         }
+
+        private User? currentUser;
         private bool admin;
         public bool Admin 
         {
@@ -67,7 +69,8 @@ namespace QuanLiThuVienNS
                             
                             if(us.Password == password && us.UserName == name)
                             {
-                                
+                                admin = false;
+                                currentUser = us;
                                 return true;
                             }
                         }
@@ -80,6 +83,7 @@ namespace QuanLiThuVienNS
                         Console.ForegroundColor = ConsoleColor.Red;
                         Console.WriteLine("Không tìm thấy tài khoản !");
                         Console.ResetColor();
+                        admin = false;
                         return false;                     
                     }
                 }
@@ -147,7 +151,79 @@ namespace QuanLiThuVienNS
         }
         public void QuanLiTaiKhoan()
         {
-
+            bool loop = true;
+            while(loop)
+            {
+                ChooseMenu();
+                int choose;
+                if(int.TryParse(Console.ReadLine(), out choose))
+                {
+                    if(choose == 1)
+                    {
+                        // đoạn này lười code quá :P
+                        Console.WriteLine("Số lượng sách trong thư viện: 0");
+                        Console.WriteLine("Nhấn nút bất kỳ để thoát");
+                        Console.ReadKey();
+                    }
+                    else if(choose == 2)
+                    {
+                        Console.Write("Bạn đang đăng nhập với tư cách: ");
+                        Console.WriteLine((admin) ? "Admin" : "Thành viên");
+                        Console.WriteLine();
+                        if(admin)
+                        {
+                            Console.WriteLine("Số thành viên đăng ký tài khoản trong thư viện: " + users.Count);
+                            Console.WriteLine();
+                            foreach(User us in users)
+                            {
+                                Console.WriteLine($"Tên người dùng: {us.Name}");
+                                Console.WriteLine($"Tên tài khoản: {us.UserName}");
+                                Console.WriteLine($"Mật khẩu: {us.Password}");
+                                Console.WriteLine($"Tuổi: {us.Age}");
+                                Console.WriteLine($"Ngày mượn sách: none");
+                                Console.WriteLine($"Ngày trả sách: none");
+                                Console.WriteLine();
+                            }
+                        }
+                        else
+                        {
+                            if(currentUser != null)
+                            {
+                                Console.WriteLine($"Tên người dùng: {currentUser.Name}");
+                                Console.WriteLine($"Tên tài khoản: {currentUser.UserName}");
+                                Console.WriteLine($"Mật khẩu: {currentUser.Password}");
+                                Console.WriteLine($"Tuổi: {currentUser.Age}");
+                                Console.WriteLine($"Ngày mượn sách: none");
+                                Console.WriteLine($"Ngày trả sách: none");
+                            }
+                        }
+                        Console.WriteLine();
+                        Console.WriteLine("Nhấn phím bất kỳ để thoát");
+                        Console.ReadKey();
+                    }
+                    else if(choose == 3)
+                    {
+                        loop = false;
+                    }
+                }
+            }
+        }
+        public void ChooseMenu()
+        {
+            Console.Clear();
+            Console.WriteLine("\tChương trình quản lí thư viện\t\n");
+            if(admin)
+            {
+                Console.WriteLine("1. Xem danh sách sách trong thư viện");
+                Console.WriteLine("2. Xem danh sách tài khoản");
+                Console.WriteLine("3. Thoát");
+            }
+            else
+            {
+                Console.WriteLine("1. Xem danh sách sách trong thư viện");
+                Console.WriteLine("2. Xem tài khoản");
+                Console.WriteLine("3. Thoát");
+            }
         }
     }
 }

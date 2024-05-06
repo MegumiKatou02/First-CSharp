@@ -25,7 +25,7 @@ namespace ProgramNS
                         Console.Clear();
                         if(quanLiThuVien.DangNhap())
                         {
-
+                            quanLiThuVien.QuanLiTaiKhoan();
                         }
                     }
                     else if(choose == 2)
