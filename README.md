@@ -1,3 +1,3 @@
 # First-CSharp
 
-A Repository to practice using c#
+A Repository to practicc using c#
