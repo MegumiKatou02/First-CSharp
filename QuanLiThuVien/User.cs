@@ -46,8 +46,23 @@ namespace Userns
             set => password = value;
         }
         private int age;
+        public int Age 
+        {
+            get => age;
+            set => age = value;
+        }
         private Date? ngayMuonSach;
+        public Date? NgayMuonSach 
+        {
+            get => ngayMuonSach;
+            set => ngayMuonSach = value;
+        }
         private Date? ngayTraSach;
+        public Date? NgayTraSach 
+        {
+            get => ngayTraSach;
+            set => ngayTraSach = value;
+        }
         
     }
 }

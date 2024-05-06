@@ -7,10 +7,17 @@ namespace QuanLiThuVienNS
     {
         public QuanLiThuVien()
         {
+            admin = false;
             users = new List<User>();
         }
+        private bool admin;
+        public bool Admin 
+        {
+            get => admin;
+            set => admin = value;
+        }
         private List<User> users;
-        public void DangNhap()
+        public bool DangNhap()
         {
             do
             {   string? name = "", password;
@@ -30,7 +37,7 @@ namespace QuanLiThuVienNS
                         {
                             if(id == 1)
                             {
-                                break;   // Thoát
+                                return false;   // Thoát
                             }
                         }
                         completetUser = true;   
@@ -51,7 +58,7 @@ namespace QuanLiThuVienNS
                         {
                             if(id == 1)
                             {
-                                break;   // Thoát
+                                return false;   // Thoát
                             }
                         }
                         // after complete user and password
@@ -60,12 +67,20 @@ namespace QuanLiThuVienNS
                             
                             if(us.Password == password && us.UserName == name)
                             {
-                                Console.WriteLine("Đăng nhập thành công");
-                                break;
+                                
+                                return true;
                             }
                         }
-                        Console.WriteLine("Đăng nhập không thành công");
-                        break;                        
+                        if(name == "admin" && password == "admin")
+                        {
+                            admin = true;
+                            return true;
+                        }
+                        Console.Clear();
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine("Không tìm thấy tài khoản !");
+                        Console.ResetColor();
+                        return false;                     
                     }
                 }
             }
@@ -74,22 +89,30 @@ namespace QuanLiThuVienNS
         public void DangKy()
         {
             User user = new User();
-            Console.WriteLine("Nhập tên người dùng: ");
+            Console.WriteLine("Nhập tên người dùng: (1. Thoát)");
             user.Name = Console.ReadLine();
             if(user.Name == null)
             {
                 user.Name = "Chưa cập nhật";
             }
+            else if(user.Name == "1")
+            {
+                return;
+            }
             string? userName;
             do
             {
-                Console.WriteLine("Nhập nickname người dùng:");
+                Console.WriteLine("Nhập nickname người dùng: (1. Thoát)");
                 userName = Console.ReadLine();
                 if(userName == null)
                 {
                     Console.WriteLine("Nhập không hợp lệ");
-                    userName = "";
+                    userName = "";  
                     continue;
+                }
+                else if(userName == "1")
+                {
+                    return;
                 }
             }
             while(userName.Length < 3 || userName.Length >= 20);
@@ -97,7 +120,7 @@ namespace QuanLiThuVienNS
             string? password;
             do
             {
-                Console.WriteLine("Nhập mật khẩu");
+                Console.WriteLine("Nhập mật khẩu: (1. Thoát)");
                 password = Console.ReadLine();
                 if(password == null)
                 {
@@ -112,11 +135,19 @@ namespace QuanLiThuVienNS
                         Console.WriteLine("Mật khẩu không được chứa khoảng trắng!");
                         continue;
                     }
+                    else if(password == "1")
+                    {
+                        return;
+                    }
                 }
             }
             while(password.Length < 3 || password.Length >= 20);
             user.Password = password;
             users.Add(user);
+        }
+        public void QuanLiTaiKhoan()
+        {
+
         }
     }
 }

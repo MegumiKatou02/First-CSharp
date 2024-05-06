@@ -15,6 +15,7 @@ namespace ProgramNS
             bool loop = true;
             while(loop)
             {
+                // /Console.Clear();
                 Menu();
                 int choose;
                 if(int.TryParse(Console.ReadLine(), out choose))
@@ -22,7 +23,10 @@ namespace ProgramNS
                     if(choose == 1)
                     {
                         Console.Clear();
-                        quanLiThuVien.DangNhap();
+                        if(quanLiThuVien.DangNhap())
+                        {
+
+                        }
                     }
                     else if(choose == 2)
                     {
@@ -40,10 +44,10 @@ namespace ProgramNS
         }
         public static void Menu()
         {
-            Console.WriteLine("\t\tChương trình quản lí thư viện\t\t\n");
-            Console.WriteLine("\t1. Đăng nhập");
-            Console.WriteLine("\t2. Đăng ký");
-            Console.WriteLine("\t3. Thoát chương trình");
+            Console.WriteLine("\tChương trình quản lí thư viện\t\t\n");
+            Console.WriteLine("1. Đăng nhập");
+            Console.WriteLine("2. Đăng ký");
+            Console.WriteLine("3. Thoát chương trình");
         }
     }
 }
