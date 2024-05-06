@@ -15,7 +15,17 @@ namespace Userns
                 int key = rand.Next(1, 99);
                 userName = userName + "" + key;
             }
+            count++;
 
+        }
+        ~User()
+        {
+            count--;
+        }
+        private static int count = 0;
+        public static int UserSize()
+        {
+            return count;
         }
         private string? name;
         public string? Name
