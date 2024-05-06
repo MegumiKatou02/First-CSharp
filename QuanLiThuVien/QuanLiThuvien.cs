@@ -80,6 +80,43 @@ namespace QuanLiThuVienNS
             {
                 user.Name = "Chưa cập nhật";
             }
+            string? userName;
+            do
+            {
+                Console.WriteLine("Nhập nickname người dùng:");
+                userName = Console.ReadLine();
+                if(userName == null)
+                {
+                    Console.WriteLine("Nhập không hợp lệ");
+                    userName = "";
+                    continue;
+                }
+            }
+            while(userName.Length < 3 || userName.Length >= 20);
+            user.UserName = userName;
+            string? password;
+            do
+            {
+                Console.WriteLine("Nhập mật khẩu");
+                password = Console.ReadLine();
+                if(password == null)
+                {
+                    Console.WriteLine("Nhập không hợp lệ");
+                    password = "";
+                    continue;
+                }
+                else
+                {
+                    if(password.Contains(' '))
+                    {
+                        Console.WriteLine("Mật khẩu không được chứa khoảng trắng!");
+                        continue;
+                    }
+                }
+            }
+            while(password.Length < 3 || password.Length >= 20);
+            user.Password = password;
+            users.Add(user);
         }
     }
 }
