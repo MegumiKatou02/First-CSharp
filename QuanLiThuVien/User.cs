@@ -18,7 +18,23 @@ namespace Userns
 
         }
         private string? name;
+        public string? Name
+        {
+            get => name;
+            set => name = value;
+        }
         private string userName;
+        public string UserName
+        {
+            set => userName = value;
+            get => userName;
+        }
+        private string? password;
+        public string? Password
+        {
+            get => password;
+            set => password = value;
+        }
         private int age;
         private Date? ngayMuonSach;
         private Date? ngayTraSach;
