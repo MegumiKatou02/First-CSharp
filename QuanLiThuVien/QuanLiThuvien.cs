@@ -13,7 +13,7 @@ namespace QuanLiThuVienNS
         public void DangNhap()
         {
             do
-            {   string? name, password;
+            {   string? name = "", password;
                 bool completetUser = false;
                 if(!completetUser)
                 {
@@ -58,11 +58,28 @@ namespace QuanLiThuVienNS
                         foreach(User us in users)
                         {
                             
+                            if(us.Password == password && us.UserName == name)
+                            {
+                                Console.WriteLine("Đăng nhập thành công");
+                                break;
+                            }
                         }
+                        Console.WriteLine("Đăng nhập không thành công");
+                        break;                        
                     }
                 }
             }
             while(true);
+        }
+        public void DangKy()
+        {
+            User user = new User();
+            Console.WriteLine("Nhập tên người dùng: ");
+            user.Name = Console.ReadLine();
+            if(user.Name == null)
+            {
+                user.Name = "Chưa cập nhật";
+            }
         }
     }
 }
