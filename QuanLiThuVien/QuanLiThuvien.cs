@@ -110,7 +110,7 @@ namespace QuanLiThuVienNS
                 userName = Console.ReadLine();
                 if(userName == null)
                 {
-                    Console.WriteLine("Nhập không hợp lệ");
+                    Console.WriteLine("Nhập không hợp lệ !");
                     userName = "";  
                     continue;
                 }
