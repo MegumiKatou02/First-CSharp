@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\ADMIN\\Documents\\GitHub\\First-CSharp\\QuanLiSinhVien\\QuanLiSinhVien.csproj": {}
+    "C:\\Users\\ADMIN\\Documents\\GitHub\\First-CSharp\\QuanLiSinhVien\\QuanLiSinhVien.csproj": {}
   },
   "projects": {
-    "c:\\Users\\ADMIN\\Documents\\GitHub\\First-CSharp\\QuanLiSinhVien\\QuanLiSinhVien.csproj": {
+    "C:\\Users\\ADMIN\\Documents\\GitHub\\First-CSharp\\QuanLiSinhVien\\QuanLiSinhVien.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\ADMIN\\Documents\\GitHub\\First-CSharp\\QuanLiSinhVien\\QuanLiSinhVien.csproj",
+        "projectUniqueName": "C:\\Users\\ADMIN\\Documents\\GitHub\\First-CSharp\\QuanLiSinhVien\\QuanLiSinhVien.csproj",
         "projectName": "QuanLiSinhVien",
-        "projectPath": "c:\\Users\\ADMIN\\Documents\\GitHub\\First-CSharp\\QuanLiSinhVien\\QuanLiSinhVien.csproj",
+        "projectPath": "C:\\Users\\ADMIN\\Documents\\GitHub\\First-CSharp\\QuanLiSinhVien\\QuanLiSinhVien.csproj",
         "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\ADMIN\\Documents\\GitHub\\First-CSharp\\QuanLiSinhVien\\obj\\",
+        "outputPath": "C:\\Users\\ADMIN\\Documents\\GitHub\\First-CSharp\\QuanLiSinhVien\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config"
