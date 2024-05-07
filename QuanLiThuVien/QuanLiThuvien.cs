@@ -104,6 +104,7 @@ namespace QuanLiThuVienNS
                 return;
             }
             string? userName;
+
             do
             {
                 Console.WriteLine("Nhập nickname người dùng: (1. Thoát)");
@@ -120,8 +121,10 @@ namespace QuanLiThuVienNS
                 }
             }
             while(userName.Length < 3 || userName.Length >= 20);
+            
             user.UserName = userName;
             string? password;
+            
             do
             {
                 Console.WriteLine("Nhập mật khẩu: (1. Thoát)");
