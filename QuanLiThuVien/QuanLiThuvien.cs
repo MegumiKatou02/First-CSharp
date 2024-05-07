@@ -39,6 +39,7 @@ namespace QuanLiThuVienNS
                         {
                             if(id == 1)
                             {
+                                MessengerThucHienKhongThanhCong();
                                 return false;   // Thoát
                             }
                         }
@@ -60,6 +61,7 @@ namespace QuanLiThuVienNS
                         {
                             if(id == 1)
                             {
+                                MessengerThucHienKhongThanhCong();
                                 return false;   // Thoát
                             }
                         }
@@ -71,12 +73,14 @@ namespace QuanLiThuVienNS
                             {
                                 admin = false;
                                 currentUser = us;
+                                MessengerThucHienThanhCong();
                                 return true;
                             }
                         }
                         if(name == "admin" && password == "admin")
                         {
                             admin = true;
+                            MessengerThucHienThanhCong();
                             return true;
                         }
                         Console.Clear();
@@ -101,6 +105,7 @@ namespace QuanLiThuVienNS
             }
             else if(user.Name == "1")
             {
+                MessengerThucHienKhongThanhCong(false);
                 return;
             }
             string? userName;
@@ -117,6 +122,7 @@ namespace QuanLiThuVienNS
                 }
                 else if(userName == "1")
                 {
+                    MessengerThucHienKhongThanhCong(false);
                     return;
                 }
             }
@@ -144,6 +150,7 @@ namespace QuanLiThuVienNS
                     }
                     else if(password == "1")
                     {
+                        MessengerThucHienKhongThanhCong(false);
                         return;
                     }
                 }
@@ -151,6 +158,7 @@ namespace QuanLiThuVienNS
             while(password.Length < 3 || password.Length >= 20);
             user.Password = password;
             users.Add(user);
+            MessengerThucHienThanhCong(false);
         }
         public void QuanLiTaiKhoan()
         {
@@ -166,7 +174,7 @@ namespace QuanLiThuVienNS
                         // đoạn này lười code quá :P
                         Console.WriteLine("Số lượng sách trong thư viện: 0");
                         Console.WriteLine("Nhấn nút bất kỳ để thoát");
-                        Console.ReadKey();
+                        Console.ReadKey(false);
                     }
                     else if(choose == 2)
                     {
@@ -206,14 +214,16 @@ namespace QuanLiThuVienNS
                     }
                     else if(choose == 3)
                     {
+                        Console.Clear();
                         loop = false;
                     }
                 }
+                Console.Clear();
             }
         }
         public void ChooseMenu()
         {
-            Console.Clear();
+            //Console.Clear();
             Console.WriteLine("\tChương trình quản lí thư viện\t\n");
             if(admin)
             {
@@ -227,6 +237,28 @@ namespace QuanLiThuVienNS
                 Console.WriteLine("2. Xem tài khoản");
                 Console.WriteLine("3. Thoát");
             }
+        }
+        public void MessengerThucHienKhongThanhCong(bool dangNhap = true)
+        {
+            Console.Clear();
+            Console.ForegroundColor = ConsoleColor.Red;
+            if(!dangNhap)
+            {
+                Console.WriteLine("Đăng ký không thành công !");
+            }
+            else Console.WriteLine("Đăng nhập không thành công !");
+            Console.ResetColor();
+        }
+        public void MessengerThucHienThanhCong(bool dangNhap = true)
+        {
+            Console.Clear();
+            Console.ForegroundColor = ConsoleColor.Green;
+            if(!dangNhap)
+            {
+                Console.WriteLine("Đăng ký thành công !");
+            }
+            else Console.WriteLine("Đăng nhập thành công !");
+            Console.ResetColor();
         }
     }
 }
