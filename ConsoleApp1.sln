@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuanLiSinhVien", "QuanLiSin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuanLiThuVien", "QuanLiThuVien\QuanLiThuVien.csproj", "{F5C93E2B-2D19-4694-A41C-91D19EECF17C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExecuteSQL", "ExecuteSQL\ExecuteSQL.csproj", "{CACC3836-E9AB-4869-AE86-2232686166FD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -54,5 +56,9 @@ Global
 		{F5C93E2B-2D19-4694-A41C-91D19EECF17C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F5C93E2B-2D19-4694-A41C-91D19EECF17C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F5C93E2B-2D19-4694-A41C-91D19EECF17C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CACC3836-E9AB-4869-AE86-2232686166FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CACC3836-E9AB-4869-AE86-2232686166FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CACC3836-E9AB-4869-AE86-2232686166FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CACC3836-E9AB-4869-AE86-2232686166FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
