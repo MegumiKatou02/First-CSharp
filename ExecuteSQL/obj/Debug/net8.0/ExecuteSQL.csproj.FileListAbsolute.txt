@@ -1,0 +1,15 @@
+C:\Users\ADMIN\Documents\GitHub\First-CSharp\ExecuteSQL\bin\Debug\net8.0\ExecuteSQL.exe
+C:\Users\ADMIN\Documents\GitHub\First-CSharp\ExecuteSQL\bin\Debug\net8.0\ExecuteSQL.deps.json
+C:\Users\ADMIN\Documents\GitHub\First-CSharp\ExecuteSQL\bin\Debug\net8.0\ExecuteSQL.runtimeconfig.json
+C:\Users\ADMIN\Documents\GitHub\First-CSharp\ExecuteSQL\bin\Debug\net8.0\ExecuteSQL.dll
+C:\Users\ADMIN\Documents\GitHub\First-CSharp\ExecuteSQL\bin\Debug\net8.0\ExecuteSQL.pdb
+C:\Users\ADMIN\Documents\GitHub\First-CSharp\ExecuteSQL\obj\Debug\net8.0\ExecuteSQL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ADMIN\Documents\GitHub\First-CSharp\ExecuteSQL\obj\Debug\net8.0\ExecuteSQL.AssemblyInfoInputs.cache
+C:\Users\ADMIN\Documents\GitHub\First-CSharp\ExecuteSQL\obj\Debug\net8.0\ExecuteSQL.AssemblyInfo.cs
+C:\Users\ADMIN\Documents\GitHub\First-CSharp\ExecuteSQL\obj\Debug\net8.0\ExecuteSQL.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Documents\GitHub\First-CSharp\ExecuteSQL\obj\Debug\net8.0\ExecuteSQL.sourcelink.json
+C:\Users\ADMIN\Documents\GitHub\First-CSharp\ExecuteSQL\obj\Debug\net8.0\ExecuteSQL.dll
+C:\Users\ADMIN\Documents\GitHub\First-CSharp\ExecuteSQL\obj\Debug\net8.0\refint\ExecuteSQL.dll
+C:\Users\ADMIN\Documents\GitHub\First-CSharp\ExecuteSQL\obj\Debug\net8.0\ExecuteSQL.pdb
+C:\Users\ADMIN\Documents\GitHub\First-CSharp\ExecuteSQL\obj\Debug\net8.0\ExecuteSQL.genruntimeconfig.cache
+C:\Users\ADMIN\Documents\GitHub\First-CSharp\ExecuteSQL\obj\Debug\net8.0\ref\ExecuteSQL.dll
