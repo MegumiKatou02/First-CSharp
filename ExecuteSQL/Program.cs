@@ -125,6 +125,7 @@ namespace ExcuteSQL
                 for(int j = 0; j < dongSQL[i].Count; j++)
                 {
                     string current = dongSQL[i][j];
+                    //Console.WriteLine($"So sanh hang thu {i}: " + dongSQL[i].Count + " - " + soCot);
                     if(j >= batDauCau && j <= ketThucCau && dongSQL[i].Count > soCot)
                     {
                         temp = "";
@@ -152,7 +153,11 @@ namespace ExcuteSQL
                             dongSQL[i][m] = dongSQL[i][m + ketThucCau - batDauCau];
                         }
                         dongSQL[i].EnsureCapacity(soCot);
-                        // Console.WriteLine(soCot);
+                        if (dongSQL[i].Count > soCot)
+                        {
+                            dongSQL[i].RemoveRange(soCot, dongSQL[i].Count - soCot);
+                        }
+                        //Console.WriteLine($"new size: {dongSQL[i].Count}");
                     }
                     else 
                     {
@@ -252,14 +257,6 @@ namespace ExcuteSQL
                 }
                 testCase--;
             }
-            // for(int i = 1; i <= soDong; i++)
-            // {
-            //     foreach(string s in dongSQL[i])
-            //     {
-            //         Console.Write(s + " - ");
-            //     }
-            //     Console.WriteLine();
-            // }
             List<string> containsSQL = TachChuoi(dongSQL, dataType, batDauCau, ketThucCau, soDong, soCot);  
             int countX = 1;
             foreach(string s in containsSQL)
